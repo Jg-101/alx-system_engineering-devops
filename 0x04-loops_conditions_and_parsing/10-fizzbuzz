@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# a Bash script that disps nums from 1 to 100.
+# Disps FizzBuzz when the num is a multiple of 3 and 5
+# Disps Fizz when the num is multiple of 3
+# Disps Buzz when the num is x5
+# Else, disps the num, In a list format
+
+for i in {1..100}
+do
+if ((i % 15 == 0))
+    then
+    echo "FizzBuzz"
+elif ((i % 5 == 0))
+    then
+    echo "Buzz"
+elif (( i % 3 == 0))
+    then
+    echo "Fizz"
+else
+    echo "$i"
+fi
+done

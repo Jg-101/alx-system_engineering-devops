@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#disps the content of the file /etc/passwd.
+#only disps username, user id, and Home dir path for the user in prog
+
+while read -r passwd;
+do
+    echo "$passwd" | cut -d ":" -f1,2,6
+done < "/etc/passwd"
