@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
-#configure nginx server to listen for port 80
-#this is spm
-#this is spm
-sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
+# Bash script that configures a server to listen to port 80
+
+rm /etc/nginx/sites-enabled/default
+
+ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+
 service nginx restart
