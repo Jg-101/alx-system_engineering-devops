@@ -1,0 +1,23 @@
+When you type a URL like "google.com" or any other website into your browser and press Enter, a complex series of processes occur to retrieve and display the web page. Let's go through each of the elements you mentioned and see what happens during this process:
+
+DNS Request (Domain Name System):
+Your browser sends a DNS request to a DNS server to resolve the human-readable URL (e.g., "google.com") into an IP address. DNS servers maintain a database that associates domain names with IP addresses.
+TCP/IP (Transmission Control Protocol/Internet Protocol):
+After obtaining the IP address of the website (e.g., 172.217.0.46 for Google), your browser initiates a TCP (Transmission Control Protocol) connection to the web server using the corresponding IP address. The IP protocol (Internet Protocol) handles the routing of packets on the internet.
+Firewall:
+If you have a firewall in place (either at the client or network level), it may inspect and filter incoming and outgoing traffic. It can allow or deny connections based on various rules. Assuming the connection is allowed, the process continues.
+HTTPS/SSL (HyperText Transfer Protocol Secure/Secure Sockets Layer):
+If the website you're connecting to uses HTTPS (secure browsing), the browser and server perform an SSL/TLS handshake to establish an encrypted connection. This ensures that the data exchanged between your browser and the server remains private and secure.
+Load Balancer:
+Many large websites, like Google, use load balancers to distribute incoming web traffic across multiple web servers. Load balancers help distribute the workload and ensure high availability and reliability.
+Web Server:
+Once the connection is established, your browser sends an HTTP request to the web server. The web server, which hosts the website's static content (e.g., HTML, CSS, images), processes this request.
+Application Server:
+For dynamic websites or web applications, the web server may forward certain requests to an application server. The application server is responsible for executing server-side code, generating dynamic content, and interacting with databases.
+Database:
+If the website needs to retrieve or store data, the application server may communicate with a database server. This server handles the storage and retrieval of information, such as user accounts, posts, and other dynamic content.
+Response:
+The web server or application server generates an HTTP response, which includes the web page's content. This response is then sent back through the same connection established in step 2.
+Rendering:
+Your browser receives the response, which typically includes HTML, CSS, JavaScript, and other assets. Your browser renders and displays the web page, making it visible to you as a fully functional website.
+This entire process happens rapidly, allowing you to interact with websites on the internet seamlessly. Each component plays a crucial role in delivering the web content to your browser, ensuring both security and efficient distribution of web traffic.
